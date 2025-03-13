@@ -1,3 +1,4 @@
+
 import { 
   Building2, 
   FileSpreadsheet, 
@@ -68,7 +69,7 @@ const Features = () => {
                   "flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center",
                   feature.color
                 )}>
-                  {feature.icon && <feature.icon size={24} />}
+                  <feature.icon size={24} />
                 </div>
                 <span className={cn(
                   "font-medium",
@@ -88,7 +89,7 @@ const Features = () => {
                   "w-14 h-14 rounded-xl flex items-center justify-center mr-4",
                   features[activeFeature].color
                 )}>
-                  {features[activeFeature].icon && <features[activeFeature].icon size={28} />}
+                  <features[activeFeature].icon size={28} />
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900">
                   {features[activeFeature].title}

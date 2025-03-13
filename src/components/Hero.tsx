@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="hero-gradient pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="inline-block px-3 py-1 mb-5 text-sm font-medium blue-gradient rounded-full opacity-0 animate-fade-in">
+          <p className="inline-block px-3 py-1 mb-5 text-sm font-medium bg-blue-50 text-creda-blue rounded-full opacity-0 animate-fade-in">
             Synchronous Treasury Management
           </p>
           
