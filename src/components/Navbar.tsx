@@ -69,7 +69,7 @@ const Navbar = () => {
                 <img 
                   src="/lovable-uploads/d7b0fa69-835f-4e38-81cc-135b30f6f989.png" 
                   alt="Creda Logo" 
-                  className="h-10"
+                  className="h-12 md:h-14" /* Increased logo size from h-10 */
                 />
               </span>
             </a>
