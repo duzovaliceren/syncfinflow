@@ -67,7 +67,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/2825ef9e-9a23-49c0-8d72-5f1dfaf06f0d.png" 
                 alt="Creda Logo" 
-                className="h-20 md:h-24" 
+                className="h-24 md:h-28" 
               />
             </a>
           </div>

@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="bg-gradient-to-br from-white via-blue-50 to-blue-100 pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="inline-block px-4 py-1.5 mb-5 text-sm font-medium bg-gradient-to-r from-creda-deep-blue/10 to-creda-blue/20 text-creda-deep-blue rounded-full opacity-0 animate-fade-in">
+          <p className="inline-block px-4 py-1.5 mb-5 text-sm font-medium bg-gradient-to-r from-creda-deep-blue/30 to-creda-blue/40 text-white rounded-full opacity-0 animate-fade-in">
             Synchronous Treasury Management
           </p>
           
