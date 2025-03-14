@@ -1,12 +1,13 @@
 
 import { ArrowRight } from 'lucide-react';
+import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="hero-gradient pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
+    <section className="bg-gradient-to-br from-white via-blue-50 to-blue-100 pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="inline-block px-4 py-1.5 mb-5 text-sm font-medium bg-gradient-to-r from-blue-50 to-blue-100 text-creda-deep-blue rounded-full opacity-0 animate-fade-in blue-gradient">
+          <p className="inline-block px-4 py-1.5 mb-5 text-sm font-medium bg-gradient-to-r from-blue-100 to-indigo-100 text-creda-deep-blue rounded-full opacity-0 animate-fade-in blue-gradient">
             Synchronous Treasury Management
           </p>
           
@@ -32,9 +33,9 @@ const Hero = () => {
         
         <div className="mt-16 lg:mt-24 relative">
           <div className="relative mx-auto max-w-5xl rounded-xl overflow-hidden shadow-xl opacity-0 animate-fade-in delay-400">
-            <div className="aspect-[16/9] bg-gradient-to-r from-blue-100 to-blue-50 rounded-xl flex items-center justify-center">
+            <div className="aspect-[16/9] bg-gradient-to-br from-creda-deep-blue/5 to-blue-100 rounded-xl flex items-center justify-center">
               <div className="text-center p-10">
-                <div className="inline-block p-4 mb-4 rounded-full bg-blue-100">
+                <div className="inline-block p-4 mb-4 rounded-full bg-creda-deep-blue/10">
                   <svg className="w-10 h-10 text-creda-deep-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
                   </svg>
@@ -46,8 +47,8 @@ const Hero = () => {
           </div>
 
           {/* Decorative Elements */}
-          <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-creda-deep-blue/10 to-blue-100/30 rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-gradient-to-tr from-creda-blue/10 to-blue-200/30 rounded-full blur-3xl"></div>
+          <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-creda-deep-blue/20 to-blue-100/40 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-gradient-to-tr from-creda-blue/20 to-blue-200/40 rounded-full blur-3xl"></div>
         </div>
       </div>
     </section>

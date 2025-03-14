@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -56,7 +57,7 @@ const Navbar = () => {
   return (
     <nav 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-2",
         isScrolled ? "glassmorphism shadow-soft" : "bg-transparent"
       )}
     >
@@ -67,7 +68,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/2825ef9e-9a23-49c0-8d72-5f1dfaf06f0d.png" 
                 alt="Creda Logo" 
-                className="h-14 md:h-16" 
+                className="h-16 md:h-20" 
               />
             </a>
           </div>
