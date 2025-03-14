@@ -1,13 +1,12 @@
 
 import { ArrowRight } from 'lucide-react';
-import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-br from-white via-blue-50 to-blue-100 pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
+    <section className="hero-gradient pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="inline-block px-4 py-1.5 mb-5 text-sm font-medium bg-gradient-to-r from-creda-deep-blue/30 to-creda-blue/40 text-white rounded-full opacity-0 animate-fade-in">
+          <p className="inline-block px-3 py-1 mb-5 text-sm font-medium bg-blue-50 text-creda-blue rounded-full opacity-0 animate-fade-in">
             Synchronous Treasury Management
           </p>
           
@@ -15,7 +14,7 @@ const Hero = () => {
             <span className="blue-gradient">Seamless Banking and Accounting, Unified.</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto opacity-0 animate-fade-in delay-200 font-sans">
+          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto opacity-0 animate-fade-in delay-200">
             Connect, sync, and streamline all your financial workflows in a single platform designed for modern businesses.
           </p>
           
@@ -33,10 +32,10 @@ const Hero = () => {
         
         <div className="mt-16 lg:mt-24 relative">
           <div className="relative mx-auto max-w-5xl rounded-xl overflow-hidden shadow-xl opacity-0 animate-fade-in delay-400">
-            <div className="aspect-[16/9] bg-gradient-to-br from-creda-deep-blue/5 to-blue-100 rounded-xl flex items-center justify-center">
+            <div className="aspect-[16/9] bg-gradient-to-r from-blue-100 to-blue-50 rounded-xl flex items-center justify-center">
               <div className="text-center p-10">
-                <div className="inline-block p-4 mb-4 rounded-full bg-creda-deep-blue/10">
-                  <svg className="w-10 h-10 text-creda-deep-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div className="inline-block p-4 mb-4 rounded-full bg-blue-100">
+                  <svg className="w-10 h-10 text-creda-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
                   </svg>
                 </div>
@@ -47,8 +46,8 @@ const Hero = () => {
           </div>
 
           {/* Decorative Elements */}
-          <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-creda-deep-blue/30 to-blue-200/40 rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-gradient-to-tr from-creda-deep-blue/20 to-blue-200/40 rounded-full blur-3xl"></div>
+          <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-100 rounded-full opacity-20 blur-3xl"></div>
+          <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
         </div>
       </div>
     </section>

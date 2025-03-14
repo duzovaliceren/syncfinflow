@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -56,7 +57,7 @@ const Navbar = () => {
   return (
     <nav 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-2",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
         isScrolled ? "glassmorphism shadow-soft" : "bg-transparent"
       )}
     >
@@ -64,11 +65,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/2825ef9e-9a23-49c0-8d72-5f1dfaf06f0d.png" 
-                alt="Creda Logo" 
-                className="h-24 md:h-28" 
-              />
+              <span className="text-2xl font-bold text-creda-blue">
+                <img 
+                  src="/lovable-uploads/d7b0fa69-835f-4e38-81cc-135b30f6f989.png" 
+                  alt="Creda Logo" 
+                  className="h-10"
+                />
+              </span>
             </a>
           </div>
 
@@ -79,7 +82,7 @@ const Navbar = () => {
                 {item.dropdownItems ? (
                   <button
                     onClick={() => toggleDropdown(item.name)}
-                    className="flex items-center text-gray-700 hover:text-creda-blue transition-colors duration-200 font-medium font-sans"
+                    className="flex items-center text-gray-700 hover:text-creda-blue transition-colors duration-200"
                   >
                     {item.name}
                     <ChevronDown 
@@ -93,7 +96,7 @@ const Navbar = () => {
                 ) : (
                   <a
                     href={item.link}
-                    className="text-gray-700 hover:text-creda-blue transition-colors duration-200 font-medium font-sans"
+                    className="text-gray-700 hover:text-creda-blue transition-colors duration-200"
                   >
                     {item.name}
                   </a>
@@ -101,7 +104,7 @@ const Navbar = () => {
 
                 {/* Dropdown Menu */}
                 {item.dropdownItems && activeDropdown === item.name && (
-                  <div className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-lg animate-fade-in font-sans">
+                  <div className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-lg animate-fade-in">
                     {item.dropdownItems.map((dropdownItem) => (
                       <a
                         key={dropdownItem.name}
@@ -117,7 +120,7 @@ const Navbar = () => {
             ))}
             <a
               href="#"
-              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white btn-blue-gradient hover:bg-creda-blue-light transition-colors rounded-full shadow-sm"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white bg-creda-blue hover:bg-creda-blue-light transition-colors rounded-full shadow-sm"
             >
               Schedule a Demo
             </a>
@@ -136,7 +139,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 py-2 bg-white rounded-lg animate-fade-in font-sans">
+          <div className="md:hidden mt-4 py-2 bg-white rounded-lg animate-fade-in">
             {navLinks.map((item) => (
               <div key={item.name} className="py-2">
                 {item.dropdownItems ? (

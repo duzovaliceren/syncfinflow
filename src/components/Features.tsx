@@ -7,7 +7,6 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
-import React from 'react';
 
 const Features = () => {
   const [activeFeature, setActiveFeature] = useState<number | null>(null);
@@ -40,13 +39,13 @@ const Features = () => {
   ];
   
   return (
-    <section className="py-20 bg-gradient-to-b from-blue-50 to-white deep-blue-accent overflow-hidden">
+    <section className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 opacity-0 animate-fade-in blue-gradient">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 opacity-0 animate-fade-in">
             All your accounts in one place. All the time.
           </h2>
-          <p className="text-lg text-gray-600 opacity-0 animate-fade-in delay-100 font-sans">
+          <p className="text-lg text-gray-600 opacity-0 animate-fade-in delay-100">
             Creda integrates seamlessly with your existing financial infrastructure to provide real-time data synchronization and analysis.
           </p>
         </div>
@@ -69,15 +68,15 @@ const Features = () => {
                 feature.color,
                 "group-hover:scale-110"
               )}>
-                {React.createElement(feature.icon, { size: 28 })}
+                <feature.icon size={28} />
               </div>
               
               <h3 className="text-xl font-semibold mb-3 text-gray-900">{feature.title}</h3>
-              <p className="text-gray-600 font-sans">{feature.description}</p>
+              <p className="text-gray-600">{feature.description}</p>
               
               {/* Hover indicator */}
               <div className={cn(
-                "absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-creda-deep-blue to-transparent transform origin-left transition-transform duration-300",
+                "absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent transform origin-left transition-transform duration-300",
                 activeFeature === index ? "scale-x-100" : "scale-x-0"
               )}></div>
             </div>
