@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -68,7 +67,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/2825ef9e-9a23-49c0-8d72-5f1dfaf06f0d.png" 
                 alt="Creda Logo" 
-                className="h-16 md:h-20" 
+                className="h-20 md:h-24" 
               />
             </a>
           </div>
@@ -80,7 +79,7 @@ const Navbar = () => {
                 {item.dropdownItems ? (
                   <button
                     onClick={() => toggleDropdown(item.name)}
-                    className="flex items-center text-gray-700 hover:text-creda-blue transition-colors duration-200 font-medium"
+                    className="flex items-center text-gray-700 hover:text-creda-blue transition-colors duration-200 font-medium font-sans"
                   >
                     {item.name}
                     <ChevronDown 
@@ -94,7 +93,7 @@ const Navbar = () => {
                 ) : (
                   <a
                     href={item.link}
-                    className="text-gray-700 hover:text-creda-blue transition-colors duration-200 font-medium"
+                    className="text-gray-700 hover:text-creda-blue transition-colors duration-200 font-medium font-sans"
                   >
                     {item.name}
                   </a>
@@ -102,7 +101,7 @@ const Navbar = () => {
 
                 {/* Dropdown Menu */}
                 {item.dropdownItems && activeDropdown === item.name && (
-                  <div className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-lg animate-fade-in">
+                  <div className="absolute left-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-lg animate-fade-in font-sans">
                     {item.dropdownItems.map((dropdownItem) => (
                       <a
                         key={dropdownItem.name}
@@ -137,7 +136,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 py-2 bg-white rounded-lg animate-fade-in">
+          <div className="md:hidden mt-4 py-2 bg-white rounded-lg animate-fade-in font-sans">
             {navLinks.map((item) => (
               <div key={item.name} className="py-2">
                 {item.dropdownItems ? (

@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="bg-gradient-to-br from-white via-blue-50 to-blue-100 pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="inline-block px-4 py-1.5 mb-5 text-sm font-medium bg-gradient-to-r from-blue-100 to-indigo-100 text-creda-deep-blue rounded-full opacity-0 animate-fade-in blue-gradient">
+          <p className="inline-block px-4 py-1.5 mb-5 text-sm font-medium bg-gradient-to-r from-creda-deep-blue/10 to-creda-blue/20 text-creda-deep-blue rounded-full opacity-0 animate-fade-in">
             Synchronous Treasury Management
           </p>
           
@@ -15,7 +15,7 @@ const Hero = () => {
             <span className="blue-gradient">Seamless Banking and Accounting, Unified.</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto opacity-0 animate-fade-in delay-200">
+          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto opacity-0 animate-fade-in delay-200 font-sans">
             Connect, sync, and streamline all your financial workflows in a single platform designed for modern businesses.
           </p>
           
@@ -47,8 +47,8 @@ const Hero = () => {
           </div>
 
           {/* Decorative Elements */}
-          <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-creda-deep-blue/20 to-blue-100/40 rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-gradient-to-tr from-creda-blue/20 to-blue-200/40 rounded-full blur-3xl"></div>
+          <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-creda-deep-blue/30 to-blue-200/40 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-gradient-to-tr from-creda-deep-blue/20 to-blue-200/40 rounded-full blur-3xl"></div>
         </div>
       </div>
     </section>

@@ -40,13 +40,13 @@ const Features = () => {
   ];
   
   return (
-    <section className="py-20 bg-white deep-blue-accent overflow-hidden">
+    <section className="py-20 bg-gradient-to-b from-blue-50 to-white deep-blue-accent overflow-hidden">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 opacity-0 animate-fade-in blue-gradient">
             All your accounts in one place. All the time.
           </h2>
-          <p className="text-lg text-gray-600 opacity-0 animate-fade-in delay-100">
+          <p className="text-lg text-gray-600 opacity-0 animate-fade-in delay-100 font-sans">
             Creda integrates seamlessly with your existing financial infrastructure to provide real-time data synchronization and analysis.
           </p>
         </div>
@@ -73,7 +73,7 @@ const Features = () => {
               </div>
               
               <h3 className="text-xl font-semibold mb-3 text-gray-900">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="text-gray-600 font-sans">{feature.description}</p>
               
               {/* Hover indicator */}
               <div className={cn(
