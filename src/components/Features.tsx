@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
+import React from 'react';
 
 const Features = () => {
   const [activeFeature, setActiveFeature] = useState<number | null>(null);
@@ -68,7 +69,7 @@ const Features = () => {
                 feature.color,
                 "group-hover:scale-110"
               )}>
-                <feature.icon size={28} />
+                {React.createElement(feature.icon, { size: 28 })}
               </div>
               
               <h3 className="text-xl font-semibold mb-3 text-gray-900">{feature.title}</h3>
