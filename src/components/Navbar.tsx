@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -57,7 +56,7 @@ const Navbar = () => {
   return (
     <nav 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3",
         isScrolled ? "glassmorphism shadow-soft" : "bg-transparent"
       )}
     >
@@ -65,13 +64,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-creda-blue">
-                <img 
-                  src="/lovable-uploads/d7b0fa69-835f-4e38-81cc-135b30f6f989.png" 
-                  alt="Creda Logo" 
-                  className="h-10"
-                />
-              </span>
+              <img 
+                src="/lovable-uploads/2825ef9e-9a23-49c0-8d72-5f1dfaf06f0d.png" 
+                alt="Creda Logo" 
+                className="h-14 md:h-16" 
+              />
             </a>
           </div>
 
@@ -82,7 +79,7 @@ const Navbar = () => {
                 {item.dropdownItems ? (
                   <button
                     onClick={() => toggleDropdown(item.name)}
-                    className="flex items-center text-gray-700 hover:text-creda-blue transition-colors duration-200"
+                    className="flex items-center text-gray-700 hover:text-creda-blue transition-colors duration-200 font-medium"
                   >
                     {item.name}
                     <ChevronDown 
@@ -96,7 +93,7 @@ const Navbar = () => {
                 ) : (
                   <a
                     href={item.link}
-                    className="text-gray-700 hover:text-creda-blue transition-colors duration-200"
+                    className="text-gray-700 hover:text-creda-blue transition-colors duration-200 font-medium"
                   >
                     {item.name}
                   </a>
@@ -120,7 +117,7 @@ const Navbar = () => {
             ))}
             <a
               href="#"
-              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white bg-creda-blue hover:bg-creda-blue-light transition-colors rounded-full shadow-sm"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium text-white btn-blue-gradient hover:bg-creda-blue-light transition-colors rounded-full shadow-sm"
             >
               Schedule a Demo
             </a>

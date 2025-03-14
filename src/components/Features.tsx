@@ -40,10 +40,10 @@ const Features = () => {
   ];
   
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-20 bg-white deep-blue-accent overflow-hidden">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 opacity-0 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 opacity-0 animate-fade-in blue-gradient">
             All your accounts in one place. All the time.
           </h2>
           <p className="text-lg text-gray-600 opacity-0 animate-fade-in delay-100">
@@ -77,7 +77,7 @@ const Features = () => {
               
               {/* Hover indicator */}
               <div className={cn(
-                "absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent transform origin-left transition-transform duration-300",
+                "absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-creda-deep-blue to-transparent transform origin-left transition-transform duration-300",
                 activeFeature === index ? "scale-x-100" : "scale-x-0"
               )}></div>
             </div>
