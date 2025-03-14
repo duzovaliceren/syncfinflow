@@ -13,26 +13,26 @@ const Features = () => {
   
   const features = [
     {
-      title: "Banking Integration",
-      description: "Directly integrates with Bankalararası Kart Merkezi (BKM) and retrieves financial data through a secure API Tunnel, ensuring real-time access to transactions and balances.",
+      title: "Open Banking",
+      description: "Creda seamlessly connects ERP solutions with banking accounts through national API tunnel with its open banking platform, ensuring real-time synchronization and a unified financial view.",
       icon: Building2,
       color: "bg-blue-50 text-creda-blue"
     },
     {
       title: "Reconciliation",
-      description: "Automatically matches transactions across banking and accounting systems, reducing errors, eliminating manual data entry, and improving financial accuracy.",
+      description: "Auto-matches ERP transactions with real-time bank data, ensuring accuracy, spotting errors instantly, and keeping finances in sync.",
       icon: FileSpreadsheet,
       color: "bg-indigo-50 text-indigo-600"
     },
     {
-      title: "Accounts Receivable Tracking",
-      description: "Monitors unpaid invoices, predicts overdue payments, and helps businesses reduce Days Sales Outstanding (DSO) by streamlining collection processes.",
+      title: "A/R Tracking",
+      description: "Monitor account receivables, predict overdue payments, and reduce DSO for optimized cash flow.",
       icon: ReceiptText,
       color: "bg-sky-50 text-sky-600"
     },
     {
       title: "Reporting",
-      description: "Generates daily financial reports, including revenue, expenses, accounts receivable, and accounts payable, for better financial visibility and decision-making.",
+      description: "Automatically generates real-time daily, weekly, and monthly reports by tracking accounting and bank accounts.",
       icon: BarChart3,
       color: "bg-cyan-50 text-cyan-600"
     }
@@ -46,7 +46,7 @@ const Features = () => {
             All your accounts in one place. All the time.
           </h2>
           <p className="text-lg text-gray-600 opacity-0 animate-fade-in delay-100">
-            Creda integrates seamlessly with your existing financial infrastructure to provide real-time data synchronization and analysis.
+            Creda seamlessly connects ERP solutions with banking accounts through its open banking platform, ensuring real-time synchronization and a unified financial view.
           </p>
         </div>
         

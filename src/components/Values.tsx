@@ -11,25 +11,25 @@ const Values = () => {
     {
       icon: RefreshCw,
       title: "Synchronous",
-      description: "Real-time financial synchronization ensures banking and accounting data are always up to date, eliminating manual entry and reconciliation delays.",
+      description: "Eliminates gaps between accounting and payment accounts, ensuring seamless financial alignment.",
       color: "bg-gradient-to-br from-blue-500 to-blue-600"
     },
     {
       icon: Link,
       title: "Integrated",
-      description: "Seamlessly connects with ERP systems, accounting software, and financial institutions to automate reconciliation, receivables tracking, and payment processes.",
+      description: "Seamlessly connects to ERP systems and financial institutions.",
       color: "bg-gradient-to-br from-indigo-500 to-indigo-600" 
     },
     {
       icon: ShieldCheck,
       title: "Private",
-      description: "Enterprise-grade security and encryption protect sensitive financial data, ensuring compliance and access control for authorized users only.",
+      description: "Enterprise-grade security protects financial data with encryption and access control.",
       color: "bg-gradient-to-br from-sky-500 to-sky-600"
     }
   ];
   
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gradient-to-r from-gray-50 to-blue-50">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 opacity-0 animate-fade-in">
@@ -45,22 +45,22 @@ const Values = () => {
             <div 
               key={index}
               className={cn(
-                "bg-white rounded-2xl p-8 border border-gray-100 shadow-soft transition-all duration-300",
-                "hover:shadow-md hover:-translate-y-1",
+                "bg-white rounded-2xl p-8 border border-blue-100 shadow-md transition-all duration-300",
+                "hover:shadow-lg hover:-translate-y-2",
                 "opacity-0 animate-fade-in",
                 `delay-${(index + 1) * 100}`
               )}
             >
               <div className="flex justify-center mb-6">
                 <div className={cn(
-                  "flex items-center justify-center w-16 h-16 rounded-full text-white",
+                  "flex items-center justify-center w-20 h-20 rounded-full text-white",
                   value.color
                 )}>
-                  <value.icon size={32} />
+                  <value.icon size={36} />
                 </div>
               </div>
               
-              <h3 className="text-xl font-semibold mb-3 text-center text-gray-900">{value.title}</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-center text-gray-900">{value.title}</h3>
               <p className="text-gray-600 text-center">{value.description}</p>
             </div>
           ))}

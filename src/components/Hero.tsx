@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="hero-gradient pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="inline-block px-3 py-1 mb-5 text-sm font-medium bg-blue-50 text-creda-blue rounded-full opacity-0 animate-fade-in">
+          <p className="inline-block px-4 py-1.5 mb-5 text-sm font-medium bg-blue-100 text-creda-blue rounded-full opacity-0 animate-fade-in shadow-sm">
             Synchronous Treasury Management
           </p>
           
@@ -15,7 +15,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto opacity-0 animate-fade-in delay-200">
-            Connect, sync, and streamline all your financial workflows in a single platform designed for modern businesses.
+            Connect, integrate and streamline your treasury workflows in one platform designed for SMEs.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 opacity-0 animate-fade-in delay-300">
